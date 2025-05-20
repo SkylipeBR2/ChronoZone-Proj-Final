@@ -6,6 +6,9 @@
   <title>Postagens por Gênero</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <style>
     body {
       background-color: #121212;
@@ -80,54 +83,55 @@
       <button class="toggle-btn d-md-none" id="btnToggleSidebar">
         <span class="material-icons">menu</span>
       </button>
-      <a class="navbar-brand ms-3" href="index.html">ChronoZone</a>
+      <a class="navbar-brand ms-3" href="#">ChronoZone</a>
     </div>
     <div id="navbar-user-area">
+      <a href="criar-post.html" class="btn btn-success btn-sm me-2">+ Criar</a>
       <button class="btn btn-outline-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
       <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#signupModal">Cadastrar</button>
     </div>    
   </nav>
 
   <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <h4 class="text-center mt-4">Fandom</h4>
-    <h5>Gêneros</h5>
-    <div class="dropdown mb-2">
-      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">🎬 Filmes</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="postagem.html?genero=Ação">Ação</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Aventura">Aventura</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Terror">Terror</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Comédia">Comédia</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Drama">Drama</a></li>
-      </ul>
-    </div>
-    <div class="dropdown mb-2">
-      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">📺 Séries</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="postagem.html?genero=Suspense">Suspense</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Sci-Fi">Sci-Fi</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Fantasia">Fantasia</a></li>
-      </ul>
-    </div>
-    <div class="dropdown mb-2">
-      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">🎮 Jogos</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="postagem.html?genero=FPS">FPS</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=RPG">RPG</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Plataforma">Plataforma</a></li>
-      </ul>
-    </div>
-    <div class="dropdown mb-2">
-      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">🧸 Desenhos</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="postagem.html?genero=Clássicos">Clássicos</a></li>
-        <li><a class="dropdown-item" href="postagem.html?genero=Modernos">Modernos</a></li>
-      </ul>
-    </div>
-    <a href="postagem.html?genero=Animes">📚 Animes</a>
-    <a href="postagem.html?genero=Super-heróis">🦸‍♂️ Super-heróis</a>
+<div class="sidebar" id="siedbar">
+  <h4><a class="text-center mt-4 fs-4" href="index.html">ChronoZone</a></h4>
+  <h5>Gêneros</h5>
+  <div class="dropdown mb-2">
+    <a class="dropdown-toggle" href="postagem.html?genero=Filmes" role="button" data-bs-toggle="dropdown" aria-expanded="false">🎬 Filmes</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="postagem.html?genero=Ação">Ação</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Aventura">Aventura</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Terror">Terror</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Comédia">Comédia</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Drama">Drama</a></li>
+    </ul>
   </div>
+  <div class="dropdown mb-2">
+    <a class="dropdown-toggle" href="postagem.html?genero=Séries" role="button" data-bs-toggle="dropdown" aria-expanded="false">📺 Séries</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="postagem.html?genero=Suspense">Suspense</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Sci-Fi">Sci-Fi</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Fantasia">Fantasia</a></li>
+    </ul>
+  </div>
+  <div class="dropdown mb-2">
+    <a class="dropdown-toggle" href="postagem.html?genero=Jogos" role="button" data-bs-toggle="dropdown" aria-expanded="false">🎮 Jogos</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="postagem.html?genero=FPS">FPS</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=RPG">RPG</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Plataforma">Plataforma</a></li>
+    </ul>
+  </div>
+  <div class="dropdown mb-2">
+    <a class="dropdown-toggle" href="postagem.html?genero=Desenhos" role="button" data-bs-toggle="dropdown" aria-expanded="false">🧸 Desenhos</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="postagem.html?genero=Clássicos">Clássicos</a></li>
+      <li><a class="dropdown-item" href="postagem.html?genero=Modernos">Modernos</a></li>
+    </ul>
+  </div>
+  <a href="postagem.html?genero=Animes">📚 Animes</a>
+  <a href="postagem.html?genero=Super-heróis">🦸‍♂️ Super-heróis</a>
+</div>
 
   <!-- Conteúdo principal -->
   <div class="main-content">
